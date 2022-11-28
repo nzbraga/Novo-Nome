@@ -1,18 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nome de Guerra</title>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+const nDia = [
+    'Tomba-Carro', 'Camburão', 'Arranca-Olho', 'Ventania', 'Boca de Veludo',
+    'Quebra-Queixo', 'Lacração', 'Panthera', 'Fura Olho', 'Lusho e Sedução',
+    'Lima Mei','Paulada', 'Tempestade', 'Cybernética', 'Cu de Martelo',
+    'Golosa','Diva', 'Glamourosa', 'Puta de Luxo', 'Bunda de Carente',
+    'Boca-Quente', 'Dedos Magicos', 'Senta com Raiva', 'Garganta profunda',
+    'Topa tudo', 'Dois é Pouco', 'Cavala de  Troia', 'Surpresa Noturna',
+    'Sentou Gamou', 'Chupa Engole', 'Leite Quente' 
+];
 
-    <script src="./assents/script2.js"></script>
-</head>
+
+
+const nMes = [
+    'Renatinha', 'Bianquinha', 'Paloma', 'Bettynha', 'Roberta', 'Sabryna',
+    'Nicoly','Dafny','Stephany', 'Tyfani', 'Sheila', 'Samantha'
+];
+
+console.log(nMes.length)
+
+function enviar(){
+    let ndia = document.getElementById("dia-in").value;
+    let nmes = document.getElementById('mes-in').value;
+
+    let i = --ndia;
+    let ii = --nmes;
+
+    let dia = nDia[i];
+    let mes = nMes[ii];
+
+
+    document.write(`Seu nome de Tracevo é ${mes} ${dia}`);
+}
+        </script>
+    </head>
+
 <body>
-    <form id="dia-form">
-        <input id="dia" type="text" placeholder="dia">
-        <button type="submit">ai </button>
-    </form>
+    <header>
+        <title>Curso JavaScript Progressivo</title>
+    </header>
 
-</body>
+    <div>
+        <input id="dia-in" name="dia-in" value="" type="text" placeholder="dia">
+        <input id="mes-in" name="mes-in" value="" type="text" placeholder="mes"> 
+        <button onclick="enviar()">Confirmar</button>
+    </div>
+
+
 </html>
